@@ -12,6 +12,10 @@ p {
   color: #AFAFAF;
 }
 
+a:hover {
+  text-decoration: none;
+}
+
 /* Headings */
 .big-heading {
   font-size: 3.5rem;
@@ -138,6 +142,9 @@ p {
 .pricing-column {
   padding: 3% 2%;
 }
+.buffer {
+  padding-bottom: 2.5rem;
+}
 
 /* Footer Section */
 .social-icon {
@@ -145,13 +152,34 @@ p {
 }
 
 /* Media Queries */
-@media (max-width: 1028px) {
-  #title {
-    text-align: center;
-  }
+@media (max-width: 1200px) {
 
   .title-image {
     position: static;
     transform: rotate(0);
+    margin: 30% 0 30% 20%;
   }
+  #title .container-fluid {
+    text-align: center;
+  }
+  
+}
+
+
+
+@media (max-width:1000px) {
+  
+.big-heading, .section-heading {
+  font-size: 2.5rem;
+}
+.title-image {
+  margin: 0;
+}
+.testimonial-text {
+  font-size: 2rem;
+  margin-top: 25%;
+}
+#pricing {
+  padding: 80px 50px;
+}
 }
